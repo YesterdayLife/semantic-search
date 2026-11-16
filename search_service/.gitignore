@@ -4,6 +4,7 @@
 .venv/
 *.sqlite
 !/render_data/catalog.sqlite
+!/tests/fixtures/catalog_105.sqlite
 *.sqlite3
 *.db
 venv/

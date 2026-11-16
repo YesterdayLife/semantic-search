@@ -1,0 +1,15 @@
+# Linux CPU runtime for the FastAPI + quantized ONNX image.
+# Torch, CUDA, sentence-transformers, pytest, and the OpenAI client are omitted.
+# The Windows development environment is unchanged.
+
+fastapi==0.136.3
+starlette==1.10.0
+uvicorn==0.35.0
+httpx==0.28.1
+psycopg[binary]==3.3.9
+pydantic==2.14.3
+anyio==4.16.0
+onnxruntime==1.32.0
+numpy==2.2.6
+huggingface-hub==1.33.0
+tokenizers==0.23.3

@@ -1,0 +1,333 @@
+{
+  "database": "D:\\Final Project\\Hee_M3\\output\\S1-G14_M3.sqlite",
+  "applied": false,
+  "before": 105,
+  "rice_national_records": 12,
+  "rice_regional_records": 72,
+  "reconciliation": [
+    {
+      "season": "dry",
+      "year_ce": 2019,
+      "metric": "production",
+      "province_sum": "7170258",
+      "national": "7170258",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2019,
+      "metric": "area_planted",
+      "province_sum": "10995474",
+      "national": "10995474",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2019,
+      "metric": "area_harvested",
+      "province_sum": "10922437",
+      "national": "10922437",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2020,
+      "metric": "production",
+      "province_sum": "4553778",
+      "national": "4553778",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2020,
+      "metric": "area_planted",
+      "province_sum": "7342062",
+      "national": "7342062",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2020,
+      "metric": "area_harvested",
+      "province_sum": "7220559",
+      "national": "7220559",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2021,
+      "metric": "production",
+      "province_sum": "5310446",
+      "national": "5310446",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2021,
+      "metric": "area_planted",
+      "province_sum": "8342709",
+      "national": "8342709",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2021,
+      "metric": "area_harvested",
+      "province_sum": "8307141",
+      "national": "8307141",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2022,
+      "metric": "production",
+      "province_sum": "6171197",
+      "national": "6171197",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2022,
+      "metric": "area_planted",
+      "province_sum": "9547390",
+      "national": "9547390",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2022,
+      "metric": "area_harvested",
+      "province_sum": "9517803",
+      "national": "9517803",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2023,
+      "metric": "production",
+      "province_sum": "6917771",
+      "national": "6917771",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2023,
+      "metric": "area_planted",
+      "province_sum": "10606128",
+      "national": "10606128",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2023,
+      "metric": "area_harvested",
+      "province_sum": "10581029",
+      "national": "10581029",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2024,
+      "metric": "production",
+      "province_sum": "6544570",
+      "national": "6544570",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2024,
+      "metric": "area_planted",
+      "province_sum": "10057534",
+      "national": "10057534",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "dry",
+      "year_ce": 2024,
+      "metric": "area_harvested",
+      "province_sum": "10023876",
+      "national": "10023876",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2019,
+      "metric": "production",
+      "province_sum": "24064170",
+      "national": "24064170",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2019,
+      "metric": "area_planted",
+      "province_sum": "61197134",
+      "national": "61197134",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2019,
+      "metric": "area_harvested",
+      "province_sum": "54108276",
+      "national": "54108276",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2020,
+      "metric": "production",
+      "province_sum": "26423822",
+      "national": "26423822",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2020,
+      "metric": "area_planted",
+      "province_sum": "62437542",
+      "national": "62437542",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2020,
+      "metric": "area_harvested",
+      "province_sum": "60093788",
+      "national": "60093788",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2021,
+      "metric": "production",
+      "province_sum": "26806578",
+      "national": "26806578",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2021,
+      "metric": "area_planted",
+      "province_sum": "63012636",
+      "national": "63012636",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2021,
+      "metric": "area_harvested",
+      "province_sum": "60261293",
+      "national": "60261293",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2022,
+      "metric": "production",
+      "province_sum": "26711735",
+      "national": "26711735",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2022,
+      "metric": "area_planted",
+      "province_sum": "62838047",
+      "national": "62838047",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2022,
+      "metric": "area_harvested",
+      "province_sum": "59491825",
+      "national": "59491825",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2023,
+      "metric": "production",
+      "province_sum": "26933808",
+      "national": "26933808",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2023,
+      "metric": "area_planted",
+      "province_sum": "62098142",
+      "national": "62098142",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2023,
+      "metric": "area_harvested",
+      "province_sum": "60287297",
+      "national": "60287297",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2024,
+      "metric": "production",
+      "province_sum": "27008658",
+      "national": "27008658",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2024,
+      "metric": "area_planted",
+      "province_sum": "61537523",
+      "national": "61537523",
+      "difference": "0",
+      "exact": true
+    },
+    {
+      "season": "wet",
+      "year_ce": 2024,
+      "metric": "area_harvested",
+      "province_sum": "59913148",
+      "national": "59913148",
+      "difference": "0",
+      "exact": true
+    }
+  ]
+}

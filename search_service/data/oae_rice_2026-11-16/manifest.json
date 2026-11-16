@@ -1,0 +1,42 @@
+[
+  {
+    "file": "wet_country.csv",
+    "season": "wet",
+    "level": "country",
+    "dataset": "wet_rice_product",
+    "url": "https://catalog.oae.go.th/dataset/d0c2c691-06b6-472f-98b9-3052478e6c63/resource/30db4b79-2e4a-4a91-a5e7-efce382be637/download/untitled-40.csv",
+    "resource_id": "30db4b79-2e4a-4a91-a5e7-efce382be637",
+    "sha256": "a547eb81bc183f68d7c6575d87bd497e1ecb200476290f12db6a129071d7491b",
+    "downloaded_at": "2026-11-16T06:42:22.955541+00:00"
+  },
+  {
+    "file": "wet_province.csv",
+    "season": "wet",
+    "level": "province",
+    "dataset": "wet_rice_product",
+    "url": "https://catalog.oae.go.th/dataset/d0c2c691-06b6-472f-98b9-3052478e6c63/resource/dba34f73-8bbe-41ad-8edd-0f55a3e125db/download/untitled-42.csv",
+    "resource_id": "dba34f73-8bbe-41ad-8edd-0f55a3e125db",
+    "sha256": "812fb6d2e143ba6a39b9ef5a395ee87d8768747771999f4523b732f265846d00",
+    "downloaded_at": "2026-11-16T06:42:29.967583+00:00"
+  },
+  {
+    "file": "dry_country.xlsx",
+    "season": "dry",
+    "level": "country",
+    "dataset": "dry_rice_product",
+    "url": "https://catalog.oae.go.th/dataset/78d7a42f-2dfb-4e25-ae0c-521ad065bd0b/resource/07c9504f-2b39-4a39-a5a5-8b6db2d56e8f/download/untitled-18.xlsx",
+    "resource_id": "07c9504f-2b39-4a39-a5a5-8b6db2d56e8f",
+    "sha256": "e7d5f609ac1f7fb5725eed7f800a6073f53495e0c1c5d0d3d0266168b7db8fa8",
+    "downloaded_at": "2026-11-16T06:42:30.480672+00:00"
+  },
+  {
+    "file": "dry_province.xlsx",
+    "season": "dry",
+    "level": "province",
+    "dataset": "dry_rice_product",
+    "url": "https://catalog.oae.go.th/dataset/78d7a42f-2dfb-4e25-ae0c-521ad065bd0b/resource/fe0fcc99-8d05-4953-a2cb-88b4918cc8b7/download/untitled-21.xlsx",
+    "resource_id": "fe0fcc99-8d05-4953-a2cb-88b4918cc8b7",
+    "sha256": "fbb95dc8a5ca31f8929b3b64a049610d76e0fff3ab7889105d374da157b99287",
+    "downloaded_at": "2026-11-16T06:42:31.221601+00:00"
+  }
+]

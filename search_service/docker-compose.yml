@@ -1,0 +1,26 @@
+# Standalone Qdrant for S1-G14 semantic search.
+# Isolated from the CN230 MySQL Compose project and from the SQLite file.
+name: s1g14-search
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.20.0
+    container_name: s1g14-qdrant
+    restart: unless-stopped
+    privileged: false
+    ports:
+      # HTTP API and dashboard. gRPC 6334 is left unpublished.
+      - "127.0.0.1:6333:6333"
+    volumes:
+      - s1g14_qdrant_storage:/qdrant/storage
+    networks:
+      - s1g14_search
+
+networks:
+  s1g14_search:
+    name: s1g14_search
+    driver: bridge
+
+volumes:
+  s1g14_qdrant_storage:
+    name: s1g14_qdrant_storage

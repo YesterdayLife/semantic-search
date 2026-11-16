@@ -1,0 +1,1469 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "มันสำปะหลัง",
+    "category": "exact_crop",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The Thai crop name maps only to cassava. Every cassava process in SQLite is relevant, and top-k limits recall."
+  },
+  {
+    "query_id": "Q02",
+    "query": "ข้าวโพดเลี้ยงสัตว์",
+    "category": "exact_crop",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The full Thai maize name maps only to maize. Every maize process is relevant."
+  },
+  {
+    "query_id": "Q03",
+    "query": "ข้าว",
+    "category": "exact_crop",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "RIC",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The crop word alone is rice. Seasonal rice names are longer and are not present, so every rice process is relevant."
+  },
+  {
+    "query_id": "Q04",
+    "query": "อ้อยโรงงาน",
+    "category": "exact_crop",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "SUG",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The full Thai sugarcane name maps only to sugarcane. Every sugarcane process is relevant."
+  },
+  {
+    "query_id": "Q05",
+    "query": "ข้าวโพด",
+    "category": "thai_alias",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "ข้าวโพด is the shorter maize alias. It contains the rice alias, and the longer maize alias wins. Every maize process is relevant."
+  },
+  {
+    "query_id": "Q06",
+    "query": "อ้อย",
+    "category": "thai_alias",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "SUG",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "อ้อย is the short sugarcane alias. The query does not contain the longer factory-sugarcane name. Every sugarcane process is relevant."
+  },
+  {
+    "query_id": "Q07",
+    "query": "cassava",
+    "category": "english_alias",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The English word cassava maps to cassava. Every cassava process is relevant."
+  },
+  {
+    "query_id": "Q08",
+    "query": "tapioca",
+    "category": "english_alias",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Tapioca is the other English cassava alias. Every cassava process is relevant."
+  },
+  {
+    "query_id": "Q09",
+    "query": "maize",
+    "category": "english_alias",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The English word maize maps to maize. Every maize process is relevant."
+  },
+  {
+    "query_id": "Q10",
+    "query": "corn",
+    "category": "english_alias",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Corn is the other English maize alias. Every maize process is relevant."
+  },
+  {
+    "query_id": "Q11",
+    "query": "sugarcane",
+    "category": "english_alias",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "SUG",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The English word sugarcane maps to sugarcane. Every sugarcane process is relevant."
+  },
+  {
+    "query_id": "Q12",
+    "query": "มันสำปะหลังปี 2566",
+    "category": "calendar_year",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": 2023,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Buddhist Era 2566 converts to 2023 by subtracting 543. Relevant rows are the 2023 cassava processes."
+  },
+  {
+    "query_id": "Q13",
+    "query": "cassava 2023",
+    "category": "calendar_year",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": 2023,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "2023 is already a Common Era year. Relevant rows are the 2023 cassava processes."
+  },
+  {
+    "query_id": "Q14",
+    "query": "อ้อยปี 2020",
+    "category": "calendar_year",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "SUG",
+      "year_ce": 2020,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The short sugarcane alias plus Common Era 2020 selects the 2020 sugarcane processes."
+  },
+  {
+    "query_id": "Q15",
+    "query": "มันสำปะหลังภาคเหนือปี 2566",
+    "category": "region",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": 2023,
+      "region_code": "NOR",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Cassava, northern region, and Buddhist Era 2566 select one SQLite process: north cassava in 2023."
+  },
+  {
+    "query_id": "Q16",
+    "query": "maize central Thailand 2022",
+    "category": "region",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": 2022,
+      "region_code": "CEN",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The central-region alias outranks the Thailand country alias. The relevant row is central maize in 2022."
+  },
+  {
+    "query_id": "Q17",
+    "query": "มันสำปะหลังตะวันออกเฉียงเหนือ",
+    "category": "northeast_versus_north",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": "NEA",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The full northeast name contains the shorter north alias. The longer alias selects northeast cassava, not northern cassava."
+  },
+  {
+    "query_id": "Q18",
+    "query": "มันสำปะหลังภาคเหนือ",
+    "category": "northeast_versus_north",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": "NOR",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "ภาคเหนือ is the northern region and does not contain the northeast name. Every northern cassava process is relevant."
+  },
+  {
+    "query_id": "Q19",
+    "query": "ข้าวโพดอีสานปี 2563",
+    "category": "northeast_versus_north",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": 2020,
+      "region_code": "NEA",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "อีสาน is the northeast alias, not the north. Buddhist Era 2563 is 2020. The relevant row is northeast maize in 2020."
+  },
+  {
+    "query_id": "Q20",
+    "query": "มันสำปะหลังทั่วประเทศ",
+    "category": "country_versus_region",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": "country",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "ทั่วประเทศ asks for the country spatial level. Regional cassava rows are not relevant."
+  },
+  {
+    "query_id": "Q21",
+    "query": "rice in Thailand",
+    "category": "country_versus_region",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "RIC",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": "country",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Thailand sets the country level because no region alias is present. Rice is stored only at country level, so every rice process is relevant."
+  },
+  {
+    "query_id": "Q22",
+    "query": "ข้าวนาปรัง",
+    "category": "rice_season",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "RIC",
+      "year_ce": null,
+      "region_code": null,
+      "season": "dry",
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "ข้าวนาปรัง is both the rice crop and the dry-season alias. Dry-season rice processes are relevant."
+  },
+  {
+    "query_id": "Q23",
+    "query": "ข้าวนาปี",
+    "category": "rice_season",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "RIC",
+      "year_ce": null,
+      "region_code": null,
+      "season": "wet",
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "ข้าวนาปี is both the rice crop and the wet-season alias. Wet-season rice processes are relevant."
+  },
+  {
+    "query_id": "Q24",
+    "query": "dry season rice",
+    "category": "rice_season",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "RIC",
+      "year_ce": null,
+      "region_code": null,
+      "season": "dry",
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The English phrase dry season rice selects dry-season rice. Those processes are relevant."
+  },
+  {
+    "query_id": "Q25",
+    "query": "wet season rice 2021",
+    "category": "rice_season",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "RIC",
+      "year_ce": 2021,
+      "region_code": null,
+      "season": "wet",
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Wet-season rice in Common Era 2021 is one SQLite process."
+  },
+  {
+    "query_id": "Q26",
+    "query": "มันสำปะหลังและข้าวโพด",
+    "category": "multiple_crop",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": false,
+    "ambiguity": "Dictionary keeps the longer cassava alias. Semantic finds two crops and applies no crop filter. Cassava rows and maize rows are both acceptable descriptions, so there is no single relevant set.",
+    "grading_rationale": "Excluded from precision, recall, hit rate, MRR, and nDCG because the query names two crops and the backends are defined to resolve that differently."
+  },
+  {
+    "query_id": "Q27",
+    "query": "rice and maize 2020",
+    "category": "ambiguous",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": 2020,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": false,
+    "ambiguity": "Two crops are named. Semantic drops the crop filter and can keep 2020. Dictionary keeps one crop. Either 2020 crop is acceptable, so there is no single relevant set.",
+    "grading_rationale": "Excluded from single-answer relevance metrics. The year is recorded only as documentation of the ambiguity."
+  },
+  {
+    "query_id": "Q28",
+    "query": "ข้าวนาปรังและข้าวนาปี",
+    "category": "ambiguous",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "RIC",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": false,
+    "ambiguity": "Both dry-season and wet-season rice names appear. Dictionary prefers the dry season. Semantic leaves the season unfiltered. Both seasons are acceptable.",
+    "grading_rationale": "Excluded from single-answer relevance metrics because the requested season is not unique."
+  },
+  {
+    "query_id": "Q29",
+    "query": "มันสำปะหลังภาคใต้ปี 2566",
+    "category": "missing_combination",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": 2023,
+      "region_code": "SOU",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "SQLite has no southern cassava process for 2023. The correct answer list is empty. Returning a different region would be incorrect."
+  },
+  {
+    "query_id": "Q30",
+    "query": "sugarcane northeast 2024",
+    "category": "missing_combination",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "SUG",
+      "year_ce": 2024,
+      "region_code": "NEA",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Sugarcane is stored at country level. No northeast sugarcane process exists for 2024, so the correct answer list is empty."
+  },
+  {
+    "query_id": "Q31",
+    "query": "rice in the north 2023",
+    "category": "missing_combination",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "RIC",
+      "year_ce": 2023,
+      "region_code": "NOR",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Rice has no regional processes. Northern rice in 2023 is a valid question with an empty SQLite result."
+  },
+  {
+    "query_id": "Q32",
+    "query": "fertilizer",
+    "category": "unsupported_measure",
+    "measurement": "fertilizer",
+    "expected_availability": {
+      "dictionary": "unsupported",
+      "semantic": "unsupported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Fertilizer is not a validated input. No crop scope is requested. Answer rows must be empty. Related production rows in context are not relevant."
+  },
+  {
+    "query_id": "Q33",
+    "query": "carbon footprint",
+    "category": "unsupported_measure",
+    "measurement": "carbon_footprint",
+    "expected_availability": {
+      "dictionary": "unsupported",
+      "semantic": "unsupported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Carbon footprint is not in the validated database. With no production scope, the answer list must be empty."
+  },
+  {
+    "query_id": "Q34",
+    "query": "energy input",
+    "category": "unsupported_measure",
+    "measurement": "energy",
+    "expected_availability": {
+      "dictionary": "unsupported",
+      "semantic": "unsupported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Energy input is an unavailable measure and no crop, place, season, or year is requested. The answer list must be empty."
+  },
+  {
+    "query_id": "Q35",
+    "query": "fertilizer use for cassava",
+    "category": "unsupported_measure",
+    "measurement": "fertilizer",
+    "expected_availability": {
+      "dictionary": "unsupported",
+      "semantic": "partially_supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Dictionary rejects the fertilizer term. Semantic can identify cassava but cannot answer fertilizer, so its production rows are context for the supported scope and are excluded from relevance."
+  },
+  {
+    "query_id": "Q36",
+    "query": "energy input of maize",
+    "category": "unsupported_measure",
+    "measurement": "energy",
+    "expected_availability": {
+      "dictionary": "unsupported",
+      "semantic": "partially_supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Both parsers see energy input. Dictionary returns no answer. Semantic may show maize production only as a partial scope, and those rows are not relevance answers."
+  },
+  {
+    "query_id": "Q37",
+    "query": "energy consumption of cassava",
+    "category": "unsupported_measure",
+    "measurement": "energy",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "partially_supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": true,
+    "ambiguity": "Dictionary does not treat the phrase energy consumption as an unsupported input. Semantic does.",
+    "grading_rationale": "Dictionary is graded as a cassava production query because its own term list does not include this phrase. Semantic production rows are excluded from relevance because they do not answer energy consumption."
+  },
+  {
+    "query_id": "Q38",
+    "query": "water use for maize",
+    "category": "unsupported_measure",
+    "measurement": "water",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "partially_supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": true,
+    "ambiguity": "Dictionary does not list water use as an unsupported input. Semantic does.",
+    "grading_rationale": "Dictionary is graded against maize production. Semantic maize rows are marked as not answering water use and are excluded from relevance."
+  },
+  {
+    "query_id": "Q39",
+    "query": "ปริมาณการใช้น้ำของข้าวโพด",
+    "category": "unsupported_measure",
+    "measurement": "water",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "partially_supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": true,
+    "ambiguity": "Semantic recognizes การใช้น้ำ. Dictionary recognizes น้ำที่ใช้, which this wording does not contain.",
+    "grading_rationale": "Dictionary is graded as maize production. Semantic results are partial and are excluded from the production relevance score."
+  },
+  {
+    "query_id": "Q40",
+    "query": "พลังงานที่ใช้ในการผลิตอ้อย",
+    "category": "unsupported_measure",
+    "measurement": "energy",
+    "expected_availability": {
+      "dictionary": "unsupported",
+      "semantic": "partially_supported"
+    },
+    "expected_filters": {
+      "crop_id": "SUG",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "พลังงานที่ใช้ is an unavailable energy measure for both parsers, and sugarcane supplies a scope. Semantic production rows are not answers. Dictionary returns no rows."
+  },
+  {
+    "query_id": "Q41",
+    "query": "show agricultural production",
+    "category": "unfiltered_query",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "unsupported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": true,
+    "ambiguity": "No crop, year, region, or season is requested. Dictionary asks for a crop. Semantic returns an unfiltered similarity ranking. There is no single relevant set.",
+    "grading_rationale": "Excluded from relevance metrics. Filter correctness only checks that neither backend invents a structured constraint."
+  },
+  {
+    "query_id": "Q42",
+    "query": "ผลผลิตมันสำปะหลังภาคเหนือปี 2566",
+    "category": "paraphrase",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": 2023,
+      "region_code": "NOR",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The extra word ผลผลิต does not change the crop, northern region, or 2023. The relevant process is the same single northern cassava row."
+  },
+  {
+    "query_id": "Q43",
+    "query": "how much cassava was produced in the north in 2023",
+    "category": "paraphrase",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": 2023,
+      "region_code": "NOR",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The paraphrase still names cassava, the north, and 2023. The relevant process is the one northern cassava row for that year."
+  },
+  {
+    "query_id": "Q44",
+    "query": "มันสำปะหลังที่ผลผลิตมากกว่า 1000000 ตัน",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": true,
+    "ambiguity": "The quantity threshold is not a supported search filter. Treating every cassava row as relevant would ignore the threshold, so the query is excluded from relevance metrics.",
+    "grading_rationale": "The crop filter is cassava. Neither backend applies a production-quantity comparison, and this evaluation does not invent one."
+  },
+  {
+    "query_id": "Q45",
+    "query": "cassava yield above 3000 kg per rai",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": true,
+    "ambiguity": "Yield above 3000 kilograms per rai is a numeric condition that neither parser executes.",
+    "grading_rationale": "The crop filter is cassava. The query is excluded from relevance metrics because a yield threshold has no labeled executable filter."
+  },
+  {
+    "query_id": "Q46",
+    "query": "มันสำปะหลังและข้าวโพด",
+    "category": "multiple_crop",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null,
+      "crop_ids": [
+        "CAS",
+        "MAI"
+      ]
+    },
+    "evaluate_relevance": true,
+    "check_filters": false,
+    "ambiguity": "Dictionary keeps the longer cassava alias. Semantic leaves the crop unfiltered. Hybrid keeps both crops.",
+    "grading_rationale": "Both cassava and maize are requested. The relevant set is every process of either crop. Top-k must include both crops when data exist.",
+    "expected_crops": [
+      "CAS",
+      "MAI"
+    ]
+  },
+  {
+    "query_id": "Q47",
+    "query": "ผลผลิตข้าวกับอ้อย",
+    "category": "multiple_crop",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null,
+      "crop_ids": [
+        "RIC",
+        "SUG"
+      ]
+    },
+    "evaluate_relevance": true,
+    "check_filters": false,
+    "ambiguity": null,
+    "grading_rationale": "Rice and sugarcane are coordinated by กับ. Both crops are relevant.",
+    "expected_crops": [
+      "RIC",
+      "SUG"
+    ]
+  },
+  {
+    "query_id": "Q48",
+    "query": "compare rice and sugarcane production",
+    "category": "multiple_crop",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null,
+      "crop_ids": [
+        "RIC",
+        "SUG"
+      ]
+    },
+    "evaluate_relevance": true,
+    "check_filters": false,
+    "ambiguity": null,
+    "grading_rationale": "The comparison names rice and sugarcane. Both crops are relevant. No numerical conclusion is labeled.",
+    "expected_crops": [
+      "RIC",
+      "SUG"
+    ]
+  },
+  {
+    "query_id": "Q49",
+    "query": "cassava and maize in 2020",
+    "category": "multiple_crop",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": 2020,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null,
+      "crop_ids": [
+        "CAS",
+        "MAI"
+      ]
+    },
+    "evaluate_relevance": true,
+    "check_filters": false,
+    "ambiguity": null,
+    "grading_rationale": "Both crops in 2020 are relevant.",
+    "expected_crops": [
+      "CAS",
+      "MAI"
+    ]
+  },
+  {
+    "query_id": "Q50",
+    "query": "rice and cassava in the north in 2023",
+    "category": "missing_combination",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": 2023,
+      "region_code": "NOR",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null,
+      "crop_ids": [
+        "RIC",
+        "CAS"
+      ]
+    },
+    "evaluate_relevance": true,
+    "check_filters": false,
+    "ambiguity": null,
+    "grading_rationale": "Northern cassava exists for 2023. Northern rice does not. Maize is not requested.",
+    "expected_crops": [
+      "RIC",
+      "CAS"
+    ]
+  },
+  {
+    "query_id": "Q51",
+    "query": "cassava production greater than 10000000 tonnes",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "SQLite output quantity is in tonnes. Eighteen cassava processes are above 10000000 t.",
+    "numeric": {
+      "metric": "production",
+      "operator": "gt",
+      "threshold": 10000000,
+      "unit": "t"
+    },
+    "numeric_ground_truth": true
+  },
+  {
+    "query_id": "Q52",
+    "query": "maize production at least 1000000 tonnes",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "MAI",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "At least means greater than or equal. Eighteen maize processes have output of at least 1000000 t.",
+    "numeric": {
+      "metric": "production",
+      "operator": "gte",
+      "threshold": 1000000,
+      "unit": "t"
+    },
+    "numeric_ground_truth": true
+  },
+  {
+    "query_id": "Q53",
+    "query": "cassava production less than 2000000 tonnes",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Six cassava processes have output below 2000000 t.",
+    "numeric": {
+      "metric": "production",
+      "operator": "lt",
+      "threshold": 2000000,
+      "unit": "t"
+    },
+    "numeric_ground_truth": true
+  },
+  {
+    "query_id": "Q54",
+    "query": "cassava harvested yield above 3500 kg/rai",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "The phrase names harvested yield, whose SQLite unit is kg/rai. Six cassava processes exceed 3500.",
+    "numeric": {
+      "metric": "yield_harvested",
+      "operator": "gt",
+      "threshold": 3500,
+      "unit": "kg/rai"
+    },
+    "numeric_ground_truth": true
+  },
+  {
+    "query_id": "Q55",
+    "query": "cassava harvested yield below 3200 kg/rai",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Twelve cassava processes have harvested yield below 3200 kg/rai.",
+    "numeric": {
+      "metric": "yield_harvested",
+      "operator": "lt",
+      "threshold": 3200,
+      "unit": "kg/rai"
+    },
+    "numeric_ground_truth": true
+  },
+  {
+    "query_id": "Q56",
+    "query": "cassava production above 1000 kg",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": true,
+    "ambiguity": "The kilogram condition is not applied.",
+    "grading_rationale": "Production is stored in tonnes. A kilogram threshold must be rejected rather than converted.",
+    "numeric": {
+      "metric": "production",
+      "operator": "gt",
+      "threshold": 1000,
+      "unit": "kg"
+    },
+    "numeric_ground_truth": false
+  },
+  {
+    "query_id": "Q57",
+    "query": "cassava yield above 3500 kg/rai",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": false,
+    "check_filters": true,
+    "ambiguity": "The yield metric is ambiguous.",
+    "grading_rationale": "Harvested yield and planted yield differ, so a generic yield threshold is not applied.",
+    "numeric": {
+      "metric": "yield_harvested",
+      "operator": "gt",
+      "threshold": 3500,
+      "unit": "kg/rai"
+    },
+    "numeric_ground_truth": false
+  },
+  {
+    "query_id": "Q58",
+    "query": "มันสำปะหลังปี 2562 ถึง 2566",
+    "category": "calendar_year",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null,
+      "year_from": 2019,
+      "year_to": 2023
+    },
+    "evaluate_relevance": true,
+    "check_filters": false,
+    "ambiguity": null,
+    "grading_rationale": "Buddhist Era 2562 through 2566 is 2019 through 2023. Thirty-five cassava processes fall in that range.",
+    "check_filters_by_backend": {
+      "hybrid": true
+    }
+  },
+  {
+    "query_id": "Q59",
+    "query": "sugarcane and cassava in the south in 2023",
+    "category": "missing_combination",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": null,
+      "year_ce": 2023,
+      "region_code": "SOU",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null,
+      "crop_ids": [
+        "SUG",
+        "CAS"
+      ]
+    },
+    "evaluate_relevance": true,
+    "check_filters": false,
+    "ambiguity": null,
+    "grading_rationale": "Neither sugarcane nor cassava has a southern process in 2023. The answer list is empty.",
+    "expected_crops": [
+      "SUG",
+      "CAS"
+    ]
+  },
+  {
+    "query_id": "Q60",
+    "query": "carbon footprint of northeast cassava",
+    "category": "unsupported_measure",
+    "measurement": "carbon_footprint",
+    "expected_availability": {
+      "dictionary": "unsupported",
+      "semantic": "partially_supported",
+      "hybrid": "partially_supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": "NEA",
+      "season": null,
+      "spatial_level": "region",
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Carbon footprint is unavailable. Northeast cassava is only a production scope and does not answer the measure."
+  },
+  {
+    "query_id": "Q61",
+    "query": "cassava harvested area greater than 5000000 rai",
+    "category": "numeric_condition",
+    "measurement": "production",
+    "expected_availability": {
+      "dictionary": "supported",
+      "semantic": "supported",
+      "hybrid": "supported"
+    },
+    "expected_filters": {
+      "crop_id": "CAS",
+      "year_ce": null,
+      "region_code": null,
+      "season": null,
+      "spatial_level": null,
+      "source_id": null
+    },
+    "evaluate_relevance": true,
+    "check_filters": true,
+    "ambiguity": null,
+    "grading_rationale": "Harvested area is stored in rai. Eight cassava processes are above 5000000 rai.",
+    "numeric": {
+      "metric": "area_harvested",
+      "operator": "gt",
+      "threshold": 5000000,
+      "unit": "rai"
+    },
+    "numeric_ground_truth": true
+  }
+]

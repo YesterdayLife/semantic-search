@@ -1,0 +1,42 @@
+# Authorized for DEPLOY-01C.0B local execution only. Do not point this file at Neon.
+# It is not the Qdrant Compose file. It does not attach to s1g14_search or s1g14_qdrant_storage.
+# It does not publish a public port and it does not use MySQL port 3306.
+#
+# Authorized start, from search_service, after a disposable password is set in the shell:
+#   $env:S1G14_PG_TEST_PASSWORD = "<disposable local password>"
+#   docker compose -f migrations/postgres/PROPOSED_local_pgvector_test.compose.yml up -d
+#
+# Cleanup, which removes only this test volume:
+#   docker compose -f migrations/postgres/PROPOSED_local_pgvector_test.compose.yml down -v
+
+name: s1g14-pgvector-test
+
+services:
+  postgres:
+    image: pgvector/pgvector:0.8.7-pg16
+    container_name: s1g14-pgvector-test
+    restart: "no"
+    environment:
+      POSTGRES_USER: s1g14_test
+      POSTGRES_PASSWORD: ${S1G14_PG_TEST_PASSWORD:?set a disposable local password}
+      POSTGRES_DB: s1g14_migration_test
+    ports:
+      - "127.0.0.1:54329:5432"
+    volumes:
+      - s1g14_pgvector_test_data:/var/lib/postgresql/data
+    networks:
+      - s1g14_pgvector_test
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U s1g14_test -d s1g14_migration_test"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+networks:
+  s1g14_pgvector_test:
+    name: s1g14_pgvector_test
+    driver: bridge
+
+volumes:
+  s1g14_pgvector_test_data:
+    name: s1g14_pgvector_test_data
