@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: s1g14-agriculture-demo
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./search_service/Dockerfile.render
+    dockerContext: ./search_service
+    healthCheckPath: /api/health
