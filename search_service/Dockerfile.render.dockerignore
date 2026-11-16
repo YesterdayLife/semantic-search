@@ -5,6 +5,7 @@
 !frontend/**
 !render_data/
 !render_data/catalog.sqlite
+!render_data/evaluation.json
 !render_data/dictionary/
 !render_data/dictionary/semantic_search.py
 frontend/node_modules/

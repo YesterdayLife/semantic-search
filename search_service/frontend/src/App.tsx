@@ -42,17 +42,17 @@ export default function App({ client }: { client?: SearchClient }) {
         </div>
         <StatusIndicator health={health} ready={ready} readyLabel={dictionaryOnly ? "ฐานข้อมูล" : "โมเดล"} />
       </header>
-      {!dictionaryOnly && <nav className="nav" aria-label="หน้าหลัก">
+      <nav className="nav" aria-label="หน้าหลัก">
         <button type="button" className={page === "search" ? "active" : ""} onClick={() => setPage("search")}>
           ค้นหา
         </button>
-        <button type="button" className={page === "compare" ? "active" : ""} onClick={() => setPage("compare")}>
+        {!dictionaryOnly && <button type="button" className={page === "compare" ? "active" : ""} onClick={() => setPage("compare")}>
           เปรียบเทียบ
-        </button>
+        </button>}
         <button type="button" className={page === "evaluation" ? "active" : ""} onClick={() => setPage("evaluation")}>
           การประเมิน
         </button>
-      </nav>}
+      </nav>
       <main>
         {catalogError ? <p className="warning" role="alert">{catalogError}</p> : null}
         {page === "search" ? <SearchPage client={api} catalog={catalog} dictionaryOnly={dictionaryOnly} /> : null}

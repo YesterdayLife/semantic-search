@@ -8,7 +8,7 @@ from fastapi.staticfiles import StaticFiles
 
 from .adapters import DictionarySearchAdapter, dispatch
 from .comparison import comparison_view
-from .public_data import read_public_catalog
+from .public_data import read_evaluation_report, read_public_catalog
 from .schemas import CompareRequest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -20,6 +20,7 @@ def create_demo(frontend: Path = ROOT / "frontend" / "dist") -> FastAPI:
         script_path=ROOT / "render_data" / "dictionary" / "semantic_search.py",
     )
     catalog = read_public_catalog(dictionary.db_path)
+    report = read_evaluation_report(ROOT / "render_data" / "evaluation.json")
     if not catalog["process_count"] or not dictionary.report_backend_status()["available"]:
         raise RuntimeError("The demo requires a populated catalog and a working dictionary")
 
@@ -36,6 +37,10 @@ def create_demo(frontend: Path = ROOT / "frontend" / "dist") -> FastAPI:
     @app.get("/api/catalog")
     def get_catalog() -> dict:
         return catalog
+
+    @app.get("/api/evaluation-report")
+    def get_evaluation_report() -> dict:
+        return report
 
     @app.post("/api/compare")
     def search(body: CompareRequest) -> dict:

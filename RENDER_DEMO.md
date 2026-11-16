@@ -20,7 +20,8 @@ for example `ข้าวนาปีภาคใต้ปี 2566` (274,135 ton
 The database is built into each deploy. To publish newer data, replace the
 snapshot at `search_service/render_data/catalog.sqlite` with a SQLite backup
 of the updated catalog and deploy again. This demo provides Dictionary search;
-the Semantic, Hybrid, Compare, and Evaluation views are omitted.
+the Evaluation page shows saved scores for Dictionary, Semantic and Hybrid.
+Live Semantic, Hybrid and Compare require the full search runtime.
 
 Render can suspend a Free service after 15 minutes without traffic. Allow
 about a minute for the first visit after it goes idle.
